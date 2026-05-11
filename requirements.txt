@@ -1,0 +1,11 @@
+flask
+pdfplumber
+pandas
+openpyxl
+rapidfuzz
+imaplib2
+apscheduler
+python-dotenv
+pytesseract
+pdf2image
+pillow

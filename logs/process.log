@@ -1,0 +1,348 @@
+2026-04-30 11:59:42,994 | INFO | Received upload: EI00435-DATA_SHEET.pdf
+2026-04-30 12:00:07,377 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00435-DATA_SHEET.pdf
+2026-04-30 12:02:12,192 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-04-30 12:02:28,611 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-04-30 12:31:30,719 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-04-30 12:31:38,939 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-04-30 12:33:48,684 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-04-30 12:33:56,904 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-04-30 12:41:50,193 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-04-30 12:42:11,577 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-04-30 14:52:07,596 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-04-30 14:52:28,932 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-04-30 16:21:48,766 | INFO | Scheduled email poll running...
+2026-04-30 16:21:49,894 | INFO | Scheduled email poll running...
+2026-04-30 16:21:50,929 | ERROR | Email fetch error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-04-30 16:21:51,762 | ERROR | Email fetch error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-05-01 09:42:28,373 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-05-01 09:42:45,497 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 09:45:22,914 | INFO | Received upload: EI00362-DATA-OP.pdf
+2026-05-01 09:45:39,426 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:07:36,711 | INFO | Background scheduler started (30-min email poll).
+2026-05-01 15:08:20,554 | INFO | Background scheduler started (30-min email poll).
+2026-05-01 15:08:42,767 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-01 15:08:42,767 | INFO | Pipeline started for: EI00362-DATA-OP.pdf
+2026-05-01 15:09:03,808 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:09:03,808 | WARNING | No valid records found in: EI00362-DATA-OP.pdf
+2026-05-01 15:09:03,808 | INFO | Pipeline complete — 0 saved, 0 skipped | file: EI00362-DATA-OP.pdf
+2026-05-01 15:09:03,850 | INFO | Cleaned up: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:11:47,545 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-01 15:11:47,545 | INFO | Pipeline started for: EI00362-DATA-OP.pdf
+2026-05-01 15:11:58,413 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:11:58,413 | WARNING | No valid records found in: EI00362-DATA-OP.pdf
+2026-05-01 15:11:58,413 | INFO | Pipeline complete — 0 saved, 0 skipped | file: EI00362-DATA-OP.pdf
+2026-05-01 15:11:58,413 | INFO | Cleaned up: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:14:04,413 | INFO | Background scheduler started (30-min email poll).
+2026-05-01 15:14:16,391 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-01 15:14:16,391 | INFO | Pipeline started for: EI00362-DATA-OP.pdf
+2026-05-01 15:14:37,460 | INFO | Extracted text from: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:14:37,460 | WARNING | No valid records found in: EI00362-DATA-OP.pdf
+2026-05-01 15:14:37,460 | INFO | Pipeline complete — 0 saved, 0 skipped | file: EI00362-DATA-OP.pdf
+2026-05-01 15:14:37,468 | INFO | Cleaned up: C:\Users\Stakshi\pdf_to_excel_system\input_pdfs\EI00362-DATA-OP.pdf
+2026-05-01 15:44:04,425 | INFO | Scheduled email poll running...
+2026-05-01 15:44:06,145 | ERROR | Email fetch error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-05-02 15:51:17,729 | INFO | Background scheduler started (30-min interval).
+2026-05-02 15:51:29,129 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-02 15:51:29,129 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-02 15:51:50,372 | INFO | Extracted text from: uploads\EI00362-DATA-OP.pdf
+2026-05-02 15:51:50,372 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-02 15:54:08,179 | INFO | Background scheduler started (30-min interval).
+2026-05-02 15:54:19,593 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-02 15:54:19,593 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-02 15:54:29,023 | INFO | Extracted text from: uploads\EI00362-DATA-OP.pdf
+2026-05-02 15:54:29,023 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-05 09:54:08,214 | INFO | Scheduled email poll: starting...
+2026-05-05 09:54:09,604 | ERROR | Email fetch error: name 'EMAIL_PASSWORD' is not defined
+2026-05-05 09:54:09,610 | INFO | Scheduled poll done. 0 PDF(s) processed.
+2026-05-05 10:54:08,230 | INFO | Scheduled email poll: starting...
+2026-05-05 10:54:09,697 | ERROR | Email fetch error: name 'EMAIL_PASSWORD' is not defined
+2026-05-05 10:54:09,725 | INFO | Scheduled poll done. 0 PDF(s) processed.
+2026-05-05 11:24:08,222 | INFO | Scheduled email poll: starting...
+2026-05-05 11:24:09,344 | ERROR | Email fetch error: name 'EMAIL_PASSWORD' is not defined
+2026-05-05 11:24:09,344 | INFO | Scheduled poll done. 0 PDF(s) processed.
+2026-05-05 12:29:00,448 | INFO | Background scheduler started (30-min interval).
+2026-05-05 12:29:15,026 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-05 12:29:15,026 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-05 12:29:36,181 | INFO | No selectable text found. Running OCR...
+2026-05-05 12:29:36,181 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-05 12:29:36,181 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\PDF_TO_EXCEL_SYSTEM\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\PDF_TO_EXCEL_SYSTEM\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-05 12:32:22,335 | INFO | Background scheduler started (30-min interval).
+2026-05-05 12:32:34,923 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-05 12:32:34,923 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-05 12:32:44,769 | INFO | No selectable text found. Running OCR...
+2026-05-05 12:32:44,777 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-05 12:32:44,777 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\PDF_TO_EXCEL_SYSTEM\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\PDF_TO_EXCEL_SYSTEM\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-05 12:47:23,445 | INFO | Background scheduler started (30-min interval).
+2026-05-06 10:12:23,859 | INFO | Background scheduler started (30-min interval).
+2026-05-06 10:12:39,092 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-06 10:12:39,092 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 10:12:55,515 | INFO | No selectable text found. Running OCR...
+2026-05-06 10:12:55,515 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-06 10:12:55,515 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-06 11:12:23,865 | INFO | Scheduled email poll: starting...
+2026-05-06 11:12:27,393 | ERROR | Email fetch error: name 'EMAIL_PASSWORD' is not defined
+2026-05-06 11:12:27,393 | INFO | Scheduled poll done. 0 PDF(s) processed.
+2026-05-06 11:38:33,247 | INFO | Background scheduler started (30-min interval).
+2026-05-06 11:38:44,191 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-06 11:38:44,192 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 11:39:05,422 | INFO | No selectable text found. Running OCR...
+2026-05-06 11:39:05,422 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-06 11:39:05,423 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-06 11:59:47,348 | INFO | Background scheduler started (30-min interval).
+2026-05-06 12:01:05,189 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-06 12:01:05,190 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 12:01:26,324 | INFO | No selectable text found. Running OCR...
+2026-05-06 12:01:31,295 | INFO | OCR processed page 1
+2026-05-06 12:01:34,377 | INFO | OCR processed page 2
+2026-05-06 12:01:37,488 | INFO | OCR processed page 3
+2026-05-06 12:01:40,622 | INFO | OCR processed page 4
+2026-05-06 12:01:42,918 | INFO | OCR processed page 5
+2026-05-06 12:01:42,918 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-06 12:01:43,006 | INFO | Master file not found — starting fresh.
+2026-05-06 12:01:44,495 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 92, in run_pipeline
+    save_to_excel(rows)
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 167, in save_to_excel
+    _write_master(combined_df)
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 116, in _write_master
+    xls_path = _soffice_convert(tmp_xlsx, "xls", tmp_dir)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 57, in _soffice_convert
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2026-05-06 12:29:48,970 | INFO | Background scheduler started (30-min interval).
+2026-05-06 12:30:15,846 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-06 12:30:15,846 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 12:30:36,763 | INFO | No selectable text found. Running OCR...
+2026-05-06 12:30:36,763 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-06 12:30:36,763 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-06 12:36:09,700 | INFO | Processing started
+2026-05-06 12:36:09,700 | ERROR | Something failed
+2026-05-06 12:36:09,722 | INFO | Background scheduler started (30-min interval).
+2026-05-06 13:58:45,777 | INFO | Processing started
+2026-05-06 13:58:45,793 | ERROR | Something failed
+2026-05-06 13:58:45,815 | INFO | Background scheduler started (30-min interval).
+2026-05-06 13:59:34,852 | INFO | Upload received: EI00362-DATA-OP.pdf
+2026-05-06 13:59:34,852 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 13:59:56,773 | INFO | No selectable text found. Running OCR...
+2026-05-06 13:59:56,801 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-06 13:59:56,801 | ERROR | Pipeline failed for EI00362-DATA-OP.pdf: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 163, in upload
+    result = run_pipeline(save_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 70, in run_pipeline
+    raise ValueError(
+ValueError: No text extracted from EI00362-DATA-OP.pdf. PDF may be scanned/image-based — OCR support needed.
+2026-05-06 14:43:57,394 | INFO | Processing started
+2026-05-06 14:43:57,394 | ERROR | Something failed
+2026-05-06 14:44:47,616 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-06 14:44:47,616 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 14:45:01,810 | INFO | No selectable text found. Running OCR...
+2026-05-06 14:45:01,810 | ERROR | OCR extraction failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-06 14:45:01,810 | ERROR | Pipeline failed: No text extracted from PDF
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 115, in upload
+    result = run_pipeline(path)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 43, in run_pipeline
+    raise ValueError("No text extracted from PDF")
+ValueError: No text extracted from PDF
+2026-05-06 14:51:16,582 | INFO | Processing started
+2026-05-06 14:51:16,582 | ERROR | Something failed
+2026-05-06 14:52:11,089 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-06 14:52:11,089 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-06 14:52:33,168 | INFO | No selectable text found. Running OCR...
+2026-05-06 14:52:36,383 | INFO | OCR processed page 1
+2026-05-06 14:52:37,918 | INFO | OCR processed page 2
+2026-05-06 14:52:40,647 | INFO | OCR processed page 3
+2026-05-06 14:52:42,475 | INFO | OCR processed page 4
+2026-05-06 14:52:44,557 | INFO | OCR processed page 5
+2026-05-06 14:52:44,557 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-06 14:52:44,608 | INFO | Master file not found — starting fresh.
+2026-05-06 14:52:45,556 | INFO | Master updated: +49 rows, total=49
+2026-05-08 09:41:33,539 | INFO | Processing started
+2026-05-08 09:41:33,539 | ERROR | Something failed
+2026-05-08 09:43:09,204 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-08 09:43:09,204 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-08 09:43:25,523 | INFO | No selectable text found. Running OCR...
+2026-05-08 09:43:28,481 | INFO | OCR processed page 1
+2026-05-08 09:43:29,754 | INFO | OCR processed page 2
+2026-05-08 09:43:31,038 | INFO | OCR processed page 3
+2026-05-08 09:43:32,304 | INFO | OCR processed page 4
+2026-05-08 09:43:34,030 | INFO | OCR processed page 5
+2026-05-08 09:43:34,030 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-08 09:43:35,253 | ERROR | Failed to write master file: [Errno 13] Permission denied: 'output\\master.xlsx'
+2026-05-08 09:43:35,253 | ERROR | Pipeline failed: [Errno 13] Permission denied: 'output\\master.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 853, in move
+    os.rename(src, real_dst)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\Stakshi\\pdf_to_excel_system\\output\\tmp925rq0_6.xlsx' -> 'output\\master.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 115, in upload
+    result = run_pipeline(path)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 62, in run_pipeline
+    save_to_excel(rows)
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 79, in save_to_excel
+    _write_master(combined_df)
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 49, in _write_master
+    shutil.move(tmp_file, OUTPUT_FILE)  # atomic replace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 873, in move
+    copy_function(src, real_dst)
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 448, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\Stakshi\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 258, in copyfile
+    with open(dst, 'wb') as fdst:
+         ^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'output\\master.xlsx'
+2026-05-08 09:43:50,798 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-08 09:43:50,798 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-08 09:44:07,308 | INFO | No selectable text found. Running OCR...
+2026-05-08 09:44:10,622 | INFO | OCR processed page 1
+2026-05-08 09:44:11,903 | INFO | OCR processed page 2
+2026-05-08 09:44:13,170 | INFO | OCR processed page 3
+2026-05-08 09:44:14,420 | INFO | OCR processed page 4
+2026-05-08 09:44:16,145 | INFO | OCR processed page 5
+2026-05-08 09:44:16,145 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-08 09:44:16,429 | INFO | Master updated: +49 rows, total=98
+2026-05-08 11:21:57,707 | INFO | Processing started
+2026-05-08 11:21:57,707 | ERROR | Something failed
+2026-05-08 11:22:23,673 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-08 11:22:23,673 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-08 11:22:33,806 | INFO | No selectable text found. Running OCR...
+2026-05-08 11:22:36,356 | INFO | OCR processed page 1
+2026-05-08 11:22:37,978 | INFO | OCR processed page 2
+2026-05-08 11:22:39,657 | INFO | OCR processed page 3
+2026-05-08 11:22:41,273 | INFO | OCR processed page 4
+2026-05-08 11:22:43,447 | INFO | OCR processed page 5
+2026-05-08 11:22:43,447 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-08 11:22:44,206 | INFO | Master updated: +5 rows, total=103
+2026-05-08 11:45:47,403 | INFO | Processing started
+2026-05-08 11:45:47,403 | ERROR | Something failed
+2026-05-08 11:46:02,853 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-08 11:46:02,853 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-08 11:46:12,602 | INFO | No selectable text found. Running OCR...
+2026-05-08 11:46:15,419 | INFO | OCR processed page 1
+2026-05-08 11:46:17,018 | INFO | OCR processed page 2
+2026-05-08 11:46:18,620 | INFO | OCR processed page 3
+2026-05-08 11:46:20,210 | INFO | OCR processed page 4
+2026-05-08 11:46:22,364 | INFO | OCR processed page 5
+2026-05-08 11:46:22,364 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-08 11:46:22,401 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-08 11:46:22,401 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-08 11:46:22,401 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-08 11:46:22,409 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-08 11:46:22,414 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-08 11:46:22,414 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-08 11:46:22,414 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-08 11:46:22,414 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-08 11:46:23,419 | INFO | Master updated: +6 rows, total=104
+2026-05-08 11:48:26,817 | INFO | Processing started
+2026-05-08 11:48:26,817 | ERROR | Something failed
+2026-05-08 11:51:19,229 | INFO | Processing started
+2026-05-08 11:51:19,229 | ERROR | Something failed
+2026-05-08 11:51:29,196 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-08 11:51:29,196 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-08 11:51:38,467 | INFO | No selectable text found. Running OCR...
+2026-05-08 11:51:40,760 | INFO | OCR processed page 1
+2026-05-08 11:51:42,316 | INFO | OCR processed page 2
+2026-05-08 11:51:43,871 | INFO | OCR processed page 3
+2026-05-08 11:51:45,416 | INFO | OCR processed page 4
+2026-05-08 11:51:47,549 | INFO | OCR processed page 5
+2026-05-08 11:51:47,549 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-08 11:51:47,575 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-08 11:51:47,577 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-08 11:51:47,577 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-08 11:51:48,108 | INFO | Master updated: +6 rows, total=109
+2026-05-11 09:22:42,288 | INFO | Processing started
+2026-05-11 09:22:42,288 | ERROR | Something failed
+2026-05-11 09:23:32,434 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-11 09:23:32,434 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-11 09:23:49,140 | INFO | No selectable text found. Running OCR...
+2026-05-11 09:23:53,188 | INFO | OCR processed page 1
+2026-05-11 09:23:54,467 | INFO | OCR processed page 2
+2026-05-11 09:23:55,734 | INFO | OCR processed page 3
+2026-05-11 09:23:57,017 | INFO | OCR processed page 4
+2026-05-11 09:23:58,741 | INFO | OCR processed page 5
+2026-05-11 09:23:58,742 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-11 09:23:58,771 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-11 09:23:58,771 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-11 09:23:59,567 | INFO | Master updated: +6 rows, total=114
