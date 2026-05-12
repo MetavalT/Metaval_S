@@ -13,7 +13,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 os.makedirs(LOG_FOLDER, exist_ok=True)
 
 # ── Excel File (XLSX ONLY) ──────────────────────────────
-OUTPUT_FILE = os.path.join(OUTPUT_FOLDER, "master.xlsx")
+OUTPUT_FILE = os.path.join(OUTPUT_FOLDER, "OFAPDFDATAUpload (1).xlsx")
 
 # ── Logging ─────────────────────────────────────────────
 LOG_FILE = os.path.join(LOG_FOLDER, "process.log")

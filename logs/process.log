@@ -346,3 +346,181 @@ PermissionError: [Errno 13] Permission denied: 'output\\master.xlsx'
 2026-05-11 09:23:58,771 | WARNING | process_record: no KV pairs extracted from record.
 2026-05-11 09:23:58,771 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
 2026-05-11 09:23:59,567 | INFO | Master updated: +6 rows, total=114
+2026-05-11 10:54:08,530 | INFO | Processing started
+2026-05-11 10:54:08,532 | ERROR | Something failed
+2026-05-11 14:26:18,611 | INFO | Processing started
+2026-05-11 14:26:18,611 | ERROR | Something failed
+2026-05-11 14:26:49,163 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-11 14:26:49,164 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-11 14:27:10,546 | INFO | No selectable text found. Running OCR...
+2026-05-11 14:27:17,632 | INFO | OCR processed page 1
+2026-05-11 14:27:20,772 | INFO | OCR processed page 2
+2026-05-11 14:27:23,967 | INFO | OCR processed page 3
+2026-05-11 14:27:25,626 | INFO | OCR processed page 4
+2026-05-11 14:27:27,764 | INFO | OCR processed page 5
+2026-05-11 14:27:27,764 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-11 14:27:27,821 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-11 14:27:27,821 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-11 14:29:44,563 | INFO | Processing started
+2026-05-11 14:29:44,563 | ERROR | Something failed
+2026-05-11 17:06:26,663 | INFO | Processing started
+2026-05-11 17:06:26,663 | ERROR | Something failed
+2026-05-12 09:53:41,053 | INFO | Processing started
+2026-05-12 09:53:41,053 | ERROR | Something failed
+2026-05-12 09:53:52,325 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 09:53:52,325 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 09:54:02,606 | INFO | No selectable text found. Running OCR...
+2026-05-12 09:54:05,606 | INFO | OCR processed page 1
+2026-05-12 09:54:07,189 | INFO | OCR processed page 2
+2026-05-12 09:54:08,783 | INFO | OCR processed page 3
+2026-05-12 09:54:10,468 | INFO | OCR processed page 4
+2026-05-12 09:54:12,672 | INFO | OCR processed page 5
+2026-05-12 09:54:12,672 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 09:54:12,722 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 09:54:12,722 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 09:54:13,629 | ERROR | Pipeline failed: Update not allowed with duplicate indexes on other.
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 115, in upload
+    result = run_pipeline(path)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 62, in run_pipeline
+    save_to_excel(rows)
+  File "C:\Users\Stakshi\pdf_to_excel_system\excel_writer.py", line 79, in save_to_excel
+    df_master.update(df_new)
+  File "C:\Users\Stakshi\pdf_to_excel_system\venv\Lib\site-packages\pandas\core\frame.py", line 10562, in update
+    raise ValueError("Update not allowed with duplicate indexes on other.")
+ValueError: Update not allowed with duplicate indexes on other.
+2026-05-12 13:45:52,904 | INFO | Processing started
+2026-05-12 13:45:52,904 | ERROR | Something failed
+2026-05-12 13:46:11,169 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 13:46:11,169 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 13:46:33,494 | INFO | No selectable text found. Running OCR...
+2026-05-12 13:46:39,183 | INFO | OCR processed page 1
+2026-05-12 13:46:42,332 | INFO | OCR processed page 2
+2026-05-12 13:46:44,081 | INFO | OCR processed page 3
+2026-05-12 13:46:45,653 | INFO | OCR processed page 4
+2026-05-12 13:46:47,837 | INFO | OCR processed page 5
+2026-05-12 13:46:47,837 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 13:46:47,885 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 13:46:47,889 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 13:46:47,889 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 13:46:47,896 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 13:46:47,896 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 13:46:47,896 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 13:46:47,901 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 13:46:47,901 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 13:46:47,902 | ERROR | Pipeline failed: object of type 'float' has no len()
+Traceback (most recent call last):
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 119, in upload
+    result = run_pipeline(path)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stakshi\pdf_to_excel_system\app.py", line 57, in run_pipeline
+    if not tag or len(tag) < 8:
+                  ^^^^^^^^
+TypeError: object of type 'float' has no len()
+2026-05-12 13:51:48,247 | INFO | Processing started
+2026-05-12 13:51:48,247 | ERROR | Something failed
+2026-05-12 13:52:00,181 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 13:52:00,181 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 13:52:10,139 | INFO | No selectable text found. Running OCR...
+2026-05-12 13:52:12,507 | INFO | OCR processed page 1
+2026-05-12 13:52:14,099 | INFO | OCR processed page 2
+2026-05-12 13:52:15,664 | INFO | OCR processed page 3
+2026-05-12 13:52:17,240 | INFO | OCR processed page 4
+2026-05-12 13:52:19,397 | INFO | OCR processed page 5
+2026-05-12 13:52:19,397 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 13:52:19,422 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 13:52:19,422 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 13:52:19,422 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 13:52:19,422 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 13:52:19,422 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 13:52:19,430 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 13:52:19,430 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 13:52:19,430 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 13:52:19,430 | WARNING | No valid records found
+2026-05-12 13:53:29,437 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 13:53:29,437 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 13:53:39,554 | INFO | No selectable text found. Running OCR...
+2026-05-12 13:53:41,973 | INFO | OCR processed page 1
+2026-05-12 13:53:43,561 | INFO | OCR processed page 2
+2026-05-12 13:53:45,151 | INFO | OCR processed page 3
+2026-05-12 13:53:46,742 | INFO | OCR processed page 4
+2026-05-12 13:53:48,898 | INFO | OCR processed page 5
+2026-05-12 13:53:48,898 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 13:53:48,916 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 13:53:48,916 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 13:53:48,921 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 13:53:48,921 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 13:53:48,924 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 13:53:48,924 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 13:53:48,924 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 13:53:48,924 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 13:53:48,924 | WARNING | No valid records found
+2026-05-12 15:20:34,173 | INFO | Processing started
+2026-05-12 15:20:34,173 | ERROR | Something failed
+2026-05-12 15:20:45,792 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 15:20:45,792 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 15:21:07,375 | INFO | No selectable text found. Running OCR...
+2026-05-12 15:21:12,125 | INFO | OCR processed page 1
+2026-05-12 15:21:15,282 | INFO | OCR processed page 2
+2026-05-12 15:21:18,433 | INFO | OCR processed page 3
+2026-05-12 15:21:21,547 | INFO | OCR processed page 4
+2026-05-12 15:21:25,762 | INFO | OCR processed page 5
+2026-05-12 15:21:25,762 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 15:21:25,829 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 15:21:25,829 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 15:21:25,829 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 15:21:25,841 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 15:21:25,841 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 15:21:25,841 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 15:21:25,845 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 15:21:25,848 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 15:21:25,848 | WARNING | No valid records found
+2026-05-12 15:32:14,910 | INFO | Processing started
+2026-05-12 15:32:14,910 | ERROR | Something failed
+2026-05-12 15:32:27,489 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 15:32:27,489 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 15:32:45,238 | INFO | No selectable text found. Running OCR...
+2026-05-12 15:32:47,574 | INFO | OCR processed page 1
+2026-05-12 15:32:49,094 | INFO | OCR processed page 2
+2026-05-12 15:32:50,629 | INFO | OCR processed page 3
+2026-05-12 15:32:52,155 | INFO | OCR processed page 4
+2026-05-12 15:32:54,243 | INFO | OCR processed page 5
+2026-05-12 15:32:54,243 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 15:32:54,267 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 15:32:54,283 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 15:32:54,299 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 15:32:54,315 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 15:32:54,331 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 15:32:54,331 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 15:32:54,347 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 15:32:54,347 | WARNING | No valid records found
+2026-05-12 15:34:37,887 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 15:34:37,887 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 15:34:47,865 | INFO | No selectable text found. Running OCR...
+2026-05-12 15:34:50,173 | INFO | OCR processed page 1
+2026-05-12 15:34:51,702 | INFO | OCR processed page 2
+2026-05-12 15:34:53,228 | INFO | OCR processed page 3
+2026-05-12 15:34:54,749 | INFO | OCR processed page 4
+2026-05-12 15:34:56,826 | INFO | OCR processed page 5
+2026-05-12 15:34:56,826 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 15:34:56,850 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 15:34:56,866 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 15:34:56,882 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 15:34:56,898 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 15:34:56,914 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 15:34:56,914 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 15:34:56,922 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 15:34:56,930 | WARNING | No valid records found

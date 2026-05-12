@@ -297,9 +297,17 @@ _NORM_ALIASES: dict[str, str] = {_norm(k): v for k, v in ALIASES.items()}
 # Sorted list of normalised canonical names for fuzzy matching
 _NORM_CANONICALS = list(_NORM_TO_CANONICAL.keys())
 
+# ── AUTO-ALIASES FROM COLUMN NAMES ─────────────────────────
+
+for col in EXCEL_COLUMNS:
+    norm_col = _norm(col)
+
+    # Only add if not already manually defined
+    if norm_col not in _NORM_ALIASES:
+        _NORM_ALIASES[norm_col] = col
 
 # ── 4. Public API ──────────────────────────────────────────────────────────
-def resolve_column(pdf_label: str, fuzzy_threshold: float = 0.72) -> Optional[str]:
+def resolve_column(pdf_label: str, fuzzy_threshold: float = 0.68) -> Optional[str]:
     """
     Given a raw label from a PDF, return the matching Excel column name.
 
@@ -339,6 +347,25 @@ def resolve_column(pdf_label: str, fuzzy_threshold: float = 0.72) -> Optional[st
 
     return None
 
+def _split_value_unit(value: str):
+    """
+    Splits value and unit if combined.
+    Example:
+        '12.5 kg/cm2' → ('12.5', 'kg/cm2')
+    """
+    import re
+
+    if not isinstance(value, str):
+        return value, None
+
+    match = re.match(r"([\d.]+)\s*([a-zA-Z/°%]+)?", value)
+
+    if match:
+        val = match.group(1)
+        unit = match.group(2)
+        return val, unit
+
+    return value, None
 
 def map_pdf_record(raw: dict, fuzzy_threshold: float = 0.72) -> dict:
     """
@@ -356,11 +383,28 @@ def map_pdf_record(raw: dict, fuzzy_threshold: float = 0.72) -> dict:
 
     for pdf_label, value in raw.items():
         col = resolve_column(pdf_label, fuzzy_threshold)
-        if col:
-            row[col] = value
-        else:
-            unmatched.append(pdf_label)
 
+    if col:
+        val, unit = _split_value_unit(value)
+
+        row[col] = val
+
+        # Auto-fill unit columns
+        if "Pressure" in col and unit:
+            row["Pressure Unit"] = unit
+
+        elif "Temp" in col and unit:
+            row["Temp Unit"] = unit
+
+        elif "Flow Rate" in col and unit:
+            row["Flow Rate Unit"] = unit
+
+        elif "Density" in col and unit:
+            row["Density Unit"] = unit
+
+        elif "Viscosity" in col and unit:
+            row["Viscosity Unit"] = unit
+        
     if unmatched:
         row["__unmatched__"] = unmatched   # caller should log these
 

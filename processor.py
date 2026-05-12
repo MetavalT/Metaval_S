@@ -40,10 +40,7 @@ TAG_PATTERN = re.compile(
 #   "Operating Temp  = 120"
 #   "Flow Rate Min   120 Kg/h"       ← no separator, value follows label
 KV_PATTERN = re.compile(
-    r"^(?P<label>[A-Za-z][\w /.()\-]{1,60}?)"   # label (2–60 chars)
-    r"(?:\s*[:=]\s*|\s{2,})"                      # separator: colon, equals, or 2+ spaces
-    r"(?P<value>.+)$",
-    re.MULTILINE,
+    r"(?P<label>[A-Za-z][A-Za-z0-9 /().\-]{2,50})\s*[:=]?\s+(?P<value>[^\n]+)"
 )
 
 
@@ -63,7 +60,7 @@ def split_records(text: str) -> list[str]:
 
         candidate = m.group(0)
 
-        if _score_tag(candidate, text) >= 80:
+        if _score_tag(candidate, text) >= 120:
             positions.append(m.start())
 
     if not positions:
@@ -87,17 +84,37 @@ def split_records(text: str) -> list[str]:
 # ── Key-value extraction from a single record ─────────────────────────────
 
 def _extract_kv(record_text: str) -> dict:
-    """
-    Extract all key-value pairs from a single record's text block.
+    raw = {}
 
-    Returns a raw dict: {pdf_label: value_string}
-    """
-    raw: dict = {}
-    for m in KV_PATTERN.finditer(record_text):
-        label = m.group("label").strip().rstrip(":= ")
-        value = m.group("value").strip()
-        if label and value and value.lower() not in ("", "n/a", "na", "-", "--"):
-            raw[label] = value
+    lines = record_text.split("\n")
+
+    for line in lines:
+        line = line.strip()
+
+        if not line or len(line) < 5:
+            continue
+
+        # Try regex first
+        m = KV_PATTERN.search(line)
+
+        if m:
+            label = m.group("label").strip()
+            value = m.group("value").strip()
+
+            if label and value:
+                raw[label] = value
+            continue
+
+        # Fallback: split by multiple spaces
+        parts = re.split(r"\s{2,}", line)
+
+        if len(parts) >= 2:
+            label = parts[0].strip()
+            value = " ".join(parts[1:]).strip()
+
+            if label and value:
+                raw[label] = value
+
     return raw
 
 from rapidfuzz import fuzz
@@ -219,6 +236,8 @@ def process_record(record_text: str) -> dict:
     if unmatched:
         log.debug(f"Unmatched PDF labels (add to ALIASES if needed): {unmatched}")
 
+    if unmatched:
+        print("⚠ Unmapped fields:", unmatched)
     # 3. Build full row
     row = build_excel_row(mapped)
 

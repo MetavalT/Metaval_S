@@ -33,7 +33,6 @@ MASTER_FILE = OUTPUT_FILE
 def allowed_file(filename: str) -> bool:
     return "." in filename and filename.lower().endswith(".pdf")
 
-
 def run_pipeline(pdf_path: str) -> dict:
     log.info(f"Pipeline started: {os.path.basename(pdf_path)}")
 
@@ -51,10 +50,15 @@ def run_pipeline(pdf_path: str) -> dict:
 
     for rec in records:
         row = process_record(rec)
-        if row.get("tag_number"):
-            rows.append(row)
-        else:
+
+        tag = row.get("tag_number")
+
+        # 🚫 Skip invalid / weak tags
+        if not isinstance(tag, str) or len(tag.strip()) < 8:
             skipped += 1
+            continue
+
+        rows.append(row)
 
     # Step 4: Save to Excel
     if rows:
@@ -145,7 +149,7 @@ def download():
 def status():
     if not os.path.exists(MASTER_FILE):
         return jsonify({"rows": 0, "exists": False})
-
+        
     return jsonify({
         "rows": get_row_count(),
         "exists": True

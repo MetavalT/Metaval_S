@@ -54,36 +54,43 @@ def _write_master(df: pd.DataFrame) -> None:
 
 # ── Public API ───────────────────────────────────────────────────
 
-def save_to_excel(rows: list[dict]) -> int:
-    """
-    Append rows to master Excel file.
-    """
-    if not rows:
-        log.warning("No rows to save.")
-        return 0
 
-    # Read existing
-    existing_df = _read_master()
+def save_to_excel(rows: list[dict]):
 
-    # Create new DataFrame
-    new_df = pd.DataFrame(rows, columns=EXCEL_COLUMNS)
+    df_new = pd.DataFrame(rows)
 
-    # Combine
-    combined_df = pd.concat([existing_df, new_df], ignore_index=True)
+    # Ensure TagNo exists
+    if "TagNo" not in df_new.columns:
+        return
 
-    # OPTIONAL: remove duplicates if tag_number exists
-    if "tag_number" in combined_df.columns:
-        combined_df.drop_duplicates(subset=["tag_number"], keep="last", inplace=True)
+    df_new["TagNo"] = df_new["TagNo"].astype(str).str.strip().str.upper()
 
-    # Write
-    _write_master(combined_df)
+    # ── CASE 1: File exists → UPDATE ─────────────────────
+    if os.path.exists(OUTPUT_FILE):
 
-    total = len(combined_df)
-    log.info(f"Master updated: +{len(rows)} rows, total={total}")
+        df_master = pd.read_excel(OUTPUT_FILE, engine="openpyxl")
 
-    return total
+        df_master["TagNo"] = df_master["TagNo"].astype(str).str.strip().str.upper()
 
+        df_master.set_index("TagNo", inplace=True)
+        df_new.set_index("TagNo", inplace=True)
+        # 🚀 REMOVE DUPLICATE TAGS (KEEP LAST)
+        df_new = df_new[~df_new.index.duplicated(keep="last")]
+        # Update existing rows
+        df_master.update(df_new)
 
+        # Add new rows
+        new_tags = df_new.index.difference(df_master.index)
+        df_master = pd.concat([df_master, df_new.loc[new_tags]])
+
+        df_master.reset_index(inplace=True)
+
+    # ── CASE 2: File does NOT exist → CREATE ─────────────
+    else:
+        df_master = df_new.copy()
+
+    # ── SAVE BACK TO SAME FILE ──────────────────────────
+    df_master.to_excel(OUTPUT_FILE, index=False)
 def get_row_count() -> int:
     """
     Get number of rows in master file.
@@ -97,3 +104,4 @@ def get_row_count() -> int:
     except Exception as e:
         log.error(f"Failed to read row count: {e}")
         return 0
+    
