@@ -11,11 +11,11 @@ from werkzeug.utils import secure_filename
 from werkzeug.exceptions import RequestEntityTooLarge
 
 from config import INPUT_FOLDER, OUTPUT_FILE, EMAIL_USER
-from excel_writer import save_to_excel, get_row_count
 from processor import process_record, split_records
 from extractor import extract_text
 from email_poller import fetch_pdf_attachments
 from logger import get_logger
+from database import init_db, upsert_row, export_to_excel, Session, Instrument
 
 # ── App setup ─────────────────────────────────────────────
 app = Flask(__name__)
@@ -54,7 +54,7 @@ def run_pipeline(pdf_path: str) -> dict:
         tag = row.get("tag_number")
 
         # 🚫 Skip invalid / weak tags
-        if not isinstance(tag, str) or len(tag.strip()) < 8:
+        if not tag:
             skipped += 1
             continue
 
@@ -63,7 +63,8 @@ def run_pipeline(pdf_path: str) -> dict:
     # Step 4: Save to Excel
     if rows:
         with _excel_lock:
-            save_to_excel(rows)
+           for row in rows:
+            upsert_row(row)
     else:
         log.warning("No valid records found")
 
@@ -135,8 +136,7 @@ def download():
     os.close(tmp_fd)
 
     with _excel_lock:
-        shutil.copy2(MASTER_FILE, tmp_path)
-
+       export_to_excel(tmp_path)
     return send_file(
         tmp_path,
         as_attachment=True,
@@ -147,21 +147,38 @@ def download():
 
 @app.route("/status")
 def status():
-    if not os.path.exists(MASTER_FILE):
-        return jsonify({"rows": 0, "exists": False})
-        
-    return jsonify({
-        "rows": get_row_count(),
-        "exists": True
-    })
+    session = Session()
+
+    try:
+        count = session.query(Instrument).count()
+
+        return jsonify({
+            "rows": count,
+            "exists": count > 0
+        })
+
+    except Exception as e:
+        log.error(f"Status check failed: {e}")
+        return jsonify({
+            "rows": 0,
+            "exists": False,
+            "error": "Database error"
+        })
+
+    finally:
+        session.close()
 
 
 # ── Entry Point ───────────────────────────────────────────
 if __name__ == "__main__":
     os.makedirs(INPUT_FOLDER, exist_ok=True)
 
+    init_db()
+
     app.run(
         debug=False,
         host="0.0.0.0",
         port=5000
     )
+
+    

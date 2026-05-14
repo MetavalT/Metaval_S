@@ -524,3 +524,57 @@ TypeError: object of type 'float' has no len()
 2026-05-12 15:34:56,914 | INFO | Best tag candidate: D-D (score=-40)
 2026-05-12 15:34:56,922 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
 2026-05-12 15:34:56,930 | WARNING | No valid records found
+2026-05-12 16:07:42,567 | INFO | Processing started
+2026-05-12 16:07:42,583 | ERROR | Something failed
+2026-05-12 16:07:57,418 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-12 16:07:57,418 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-12 16:08:19,991 | INFO | No selectable text found. Running OCR...
+2026-05-12 16:08:24,506 | INFO | OCR processed page 1
+2026-05-12 16:08:26,150 | INFO | OCR processed page 2
+2026-05-12 16:08:27,685 | INFO | OCR processed page 3
+2026-05-12 16:08:29,258 | INFO | OCR processed page 4
+2026-05-12 16:08:31,401 | INFO | OCR processed page 5
+2026-05-12 16:08:31,401 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-12 16:08:31,417 | INFO | Best tag candidate: 073-FE-1301 (score=150)
+2026-05-12 16:08:31,417 | INFO | Best tag candidate: 073-FE-1302 (score=150)
+2026-05-12 16:08:31,425 | INFO | Best tag candidate: 073-FE-1303 (score=150)
+2026-05-12 16:08:31,425 | INFO | Best tag candidate: 073-FE-1304 (score=150)
+2026-05-12 16:08:31,425 | INFO | Best tag candidate: 073-FE-1305 (score=150)
+2026-05-12 16:08:31,425 | INFO | Best tag candidate: D-D (score=-40)
+2026-05-12 16:08:31,425 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-12 16:08:31,425 | INFO | Best tag candidate: B903-000-YK-MR (score=0)
+2026-05-12 16:08:31,425 | WARNING | process_record: no KV pairs extracted from record.
+2026-05-13 11:30:36,728 | INFO | Processing started
+2026-05-13 11:30:36,729 | ERROR | Something failed
+2026-05-13 11:30:48,243 | INFO | Uploaded: EI00362-DATA-OP.pdf
+2026-05-13 11:30:48,243 | INFO | Pipeline started: EI00362-DATA-OP.pdf
+2026-05-13 11:31:05,225 | INFO | No selectable text found. Running OCR...
+2026-05-13 11:31:09,277 | INFO | OCR processed page 1
+2026-05-13 11:31:11,759 | INFO | OCR processed page 2
+2026-05-13 11:31:14,178 | INFO | OCR processed page 3
+2026-05-13 11:31:16,653 | INFO | OCR processed page 4
+2026-05-13 11:31:19,910 | INFO | OCR processed page 5
+2026-05-13 11:31:19,910 | INFO | Text extracted using OCR: uploads\EI00362-DATA-OP.pdf
+2026-05-13 11:31:19,967 | INFO | Best tag: 073-FE-1301 (score=100)
+2026-05-13 11:31:19,969 | WARNING | Too few valid fields after cleaning — skipping
+2026-05-13 11:31:19,969 | INFO | Best tag: 073-FE-1302 (score=100)
+2026-05-13 11:31:19,969 | WARNING | Too few valid fields after cleaning — skipping
+2026-05-13 11:31:19,969 | INFO | Best tag: 073-FE-1303 (score=100)
+2026-05-13 11:31:19,969 | WARNING | Too few valid fields after cleaning — skipping
+2026-05-13 11:31:19,979 | INFO | Best tag: 073-FE-1304 (score=100)
+2026-05-13 11:31:19,979 | WARNING | Too few valid fields after cleaning — skipping
+2026-05-13 11:31:19,979 | INFO | Best tag: 073-FE-1305 (score=100)
+2026-05-13 11:31:19,979 | WARNING | Too few fields extracted — skipping record
+2026-05-13 11:31:19,990 | INFO | Best tag: D-D (score=-40)
+2026-05-13 11:31:19,990 | WARNING | Too few fields extracted — skipping record
+2026-05-13 11:31:19,991 | INFO | Best tag: B903-000-YK-MR (score=0)
+2026-05-13 11:31:19,991 | WARNING | Too few fields extracted — skipping record
+2026-05-13 11:31:19,991 | WARNING | No valid records found
+2026-05-13 14:36:00,161 | INFO | Processing started
+2026-05-13 14:36:00,161 | ERROR | Something failed
+2026-05-13 14:36:52,779 | INFO | Processing started
+2026-05-13 14:36:52,779 | ERROR | Something failed
+2026-05-13 14:37:37,992 | INFO | Processing started
+2026-05-13 14:37:37,992 | ERROR | Something failed
+2026-05-13 14:37:56,821 | INFO | Processing started
+2026-05-13 14:37:56,821 | ERROR | Something failed
